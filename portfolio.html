@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Form -->
+    <h1>My Portfolio</h1>
+
+    <table>
+        <tr>
+            <th></th>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+
+    <h1>Contact Us</h1>
+    <form action="http://form-test.slccwebdev.com/form-success.php" method="get" target="_blank">
+        <label for="formName">Name</label>
+        <input name="formName" type="text" id="formName">
+        
+        <br>
+
+        <label for="formEmail">Email</label>
+        <input name="formEmail" type="email" id="formEmail" required>
+
+        <br>
+
+        <label for="formPhone">Phone</label>
+        <input name="formPhone" type="tel" id="formPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(***)-***-****">
+        
+        <br><br>
+
+        <label for="preferedContact">How would you like us to reach you?</label><br>
+        <select id="preferedContact" name="preferedContact">
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+            <option value="Text">Text</option>
+            <option value="SnailMail">Snail Mail</option>
+          </select>
+
+          <br><br>
+
+        <label for="formComments">Comments</label><br>
+        <textarea name="formComments" id="formComments" cols="50" rows="5" placeholder="Enter Comment Here..."></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+</html>
